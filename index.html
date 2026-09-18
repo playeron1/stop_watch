@@ -9,11 +9,7 @@
 </head>
 <body>
   <main class="stopwatch" aria-labelledby="page-title">
-    <header class="stopwatch__header">
-      <p class="eyebrow">Focus timer</p>
-      <h1 id="page-title">Stopwatch</h1>
-      <p class="subtitle">Measure the moment, one second at a time.</p>
-    </header>
+    <h1 id="page-title">Stopwatch</h1>
 
     <section class="timer-panel" aria-label="Stopwatch display">
       <div class="timer" aria-label="00 hours, 00 minutes, 00 seconds, 00 hundredths">
@@ -40,10 +36,11 @@
     </section>
 
     <nav class="controls" aria-label="Stopwatch controls">
-      <button class="button button--primary" type="button">Start</button>
-      <button class="button button--secondary" type="button">Stop</button>
-      <button class="button button--quiet" type="button">Reset</button>
+      <button id="start" class="button button--primary" type="button">Start</button>
+      <button id="stop" class="button button--secondary" type="button">Stop</button>
+      <button id="reset" class="button button--quiet" type="button">Reset</button>
     </nav>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
