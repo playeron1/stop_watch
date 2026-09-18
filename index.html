@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean stopwatch interface">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stopwatch" aria-labelledby="page-title">
+    <header class="stopwatch__header">
+      <p class="eyebrow">Focus timer</p>
+      <h1 id="page-title">Stopwatch</h1>
+      <p class="subtitle">Measure the moment, one second at a time.</p>
+    </header>
+
+    <section class="timer-panel" aria-label="Stopwatch display">
+      <div class="timer" aria-label="00 hours, 00 minutes, 00 seconds, 00 hundredths">
+        <span class="timer__group">
+          <span class="timer__value">00</span>
+          <span class="timer__label">hours</span>
+        </span>
+        <span class="timer__separator" aria-hidden="true">:</span>
+        <span class="timer__group">
+          <span class="timer__value">00</span>
+          <span class="timer__label">minutes</span>
+        </span>
+        <span class="timer__separator" aria-hidden="true">:</span>
+        <span class="timer__group">
+          <span class="timer__value">00</span>
+          <span class="timer__label">seconds</span>
+        </span>
+        <span class="timer__separator timer__separator--small" aria-hidden="true">.</span>
+        <span class="timer__group timer__group--small">
+          <span class="timer__value">00</span>
+          <span class="timer__label">hundredths</span>
+        </span>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="Stopwatch controls">
+      <button class="button button--primary" type="button">Start</button>
+      <button class="button button--secondary" type="button">Stop</button>
+      <button class="button button--quiet" type="button">Reset</button>
+    </nav>
+  </main>
+</body>
+</html>
